@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  ui:
+    build:
+      context: .
+      dockerfile: etc/build/dev/Dockerfile
+    ports:
+      - 99:3000
+    volumes:
+      - .:/app
